@@ -1,0 +1,37 @@
+.main {
+    height: 300px;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr;
+    justify-items: center;
+}
+
+.main__title {
+    color: white;
+    font-size: 25px;
+    align-self: flex-end
+}
+
+/* agregar animacion al buscador */
+
+input {
+    background-color: rgba(255, 255, 255, 0.1);
+    background-image: url(magnifier-tool.png);
+    background-size: 1.5em;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 98%;
+    border: 2px solid white;
+    border-radius: 9999px;
+    font-family: "Muli", sans-serif;
+    color: white;
+    font-size: 16px;
+    height: 40px;
+    width: 70%;
+    padding: 0 20px;
+    align-self: start;
+}
+
+input::placeholder {
+    color: inherit;
+    opacity: 0.8;
+}
